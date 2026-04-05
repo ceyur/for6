@@ -1,12 +1,12 @@
-fetch('./data.json')
+fetch('./properties.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Ошибка загрузки');
     }
-    return response.json(); // Преобразуем ответ в JS-объект
+    return response.json();
   })
   .then(data => {
-    console.log(data); // Работаем с данными
+    console.log(data);
   })
 
 let routes = {};
