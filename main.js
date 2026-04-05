@@ -1,4 +1,4 @@
-const properties = {};
+let properties = {};
 let routes = {};
 let defaultRoute = null;
 const content = document.querySelector("#content");
