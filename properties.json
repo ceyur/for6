@@ -14,7 +14,6 @@
       "example": "25px",
       "default": "medium"
     },
-    {
   "font_family": {
     "name": "font-family",
     "value": "имя■шрифта1, имя■шрифта2, тип■шрифта",
