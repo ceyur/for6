@@ -1,4 +1,7 @@
 const properties = {};
+let routes = {};
+let defaultRoute = null;
+const content = document.querySelector("#content");
 fetch('./properties.json')
   .then(response => {
     if (!response.ok) {
@@ -7,13 +10,11 @@ fetch('./properties.json')
     return response.json();
   })
   .then(data => {
-	  const properties = data;
-    console.log(data);
+		properties = data;
+    	console.log(data);
+		initRouter();
+		console.log("ïnitRouter");
   });
-
-let routes = {};
-let defaultRoute = null;
-const content = document.querySelector("#content");
 
 var button = document.querySelector(".button");
 if (pageYOffset > window.innerHeight) {
@@ -32,9 +33,6 @@ window.addEventListener("scroll", () => {
 });
 /*document.querySelector(".button").style.display=pageYOffset>window.innerHeight?"flex":"none";
 window.addEventListener('scroll',()=>{document.querySelector(".button").style.display=pageYOffset>window.innerHeight?"flex":"none"});*/
-
-initRouter();
-console.log("ïnitRouter");
 
 // Инициализация маршрутов
 function initRouter() {
