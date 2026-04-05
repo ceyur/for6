@@ -1,3 +1,4 @@
+const properties = {};
 fetch('./properties.json')
   .then(response => {
     if (!response.ok) {
@@ -6,6 +7,7 @@ fetch('./properties.json')
     return response.json();
   })
   .then(data => {
+	  const properties = data;
     console.log(data);
   });
 
