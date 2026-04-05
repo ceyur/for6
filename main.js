@@ -7,7 +7,7 @@ fetch('./properties.json')
   })
   .then(data => {
     console.log(data);
-  })
+  });
 
 let routes = {};
 let defaultRoute = null;
