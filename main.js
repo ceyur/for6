@@ -33,6 +33,7 @@ close.onclick = () => {
 	const path = "/for6";
 	console.log("close.click");
 	information.style.display = "none";
+	document.querySelector("#information+a").style.display = "none";
 	// Переход по маршруту
 	history.pushState({}, "", path);
 	handleRoute();
