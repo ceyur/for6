@@ -15,7 +15,8 @@ fetch('./properties.json')
 		initRouter();
 		console.log("ïnitRouter");
   });
-const close = document.querySelector("#content");
+
+const close = document.querySelector(".close");
 close.addEventListener("click", () => {
 	const path = "/u";
 	console.log("close.click");
