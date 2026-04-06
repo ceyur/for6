@@ -34,8 +34,8 @@ close.onclick = () => {
 	console.log("close.click");
 	information.style.display = "none";
 	document.querySelector("#information+a").style.display = "none";
-	document.querySelector("#information+a+*").style.position = "fixed";
-	document.querySelector("#information+a+*").style.width = "100%";
+	document.querySelector("#information+a+*").style.position = "relative";
+	document.querySelector("#information+a+*").style.width = "auto";
 	// Переход по маршруту
 	history.pushState({}, "", path);
 	handleRoute();
@@ -43,8 +43,8 @@ close.onclick = () => {
 button_info.onclick = () => {
 	information.style.display = "block";
 	document.querySelector("#information+a").style.display = "block";
-	document.querySelector("#information+a+*").style.position = "relative";
-	document.querySelector("#information+a+*").style.width = "auto";
+	document.querySelector("#information+a+*").style.position = "fixed";
+	document.querySelector("#information+a+*").style.width = "100%";
 };
 
 if (pageYOffset > window.innerHeight) {
