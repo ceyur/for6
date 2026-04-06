@@ -1,7 +1,18 @@
 let properties = {};
-let routes = {};
-let defaultRoute = null;
+const routes = {
+	"/for6": () => {
+		Object.values(properties.text).forEach((e) => {
+			p = document.createElement("p");
+			p.innerHTML = "<b>" + e.name + "</b>: " + e.value + "; – " + e.description +"<br><i>" + e.name + ": " + e.example + ";" + "</i> " + "(" + e.default + ")";
+			content.append(p);
+		});
+	}
+};
+const defaultRoute = /for6;
 const content = document.querySelector("#content");
+const close = document.querySelector(".close");
+const button = document.querySelector(".button");
+
 fetch('./properties.json')
   .then(response => {
     if (!response.ok) {
@@ -16,7 +27,7 @@ fetch('./properties.json')
 		console.log("ïnitRouter");
   });
 
-const close = document.querySelector(".close");
+
 close.addEventListener("click", () => {
 	const path = "/for6";
 	console.log("close.click");
@@ -25,7 +36,6 @@ close.addEventListener("click", () => {
 	handleRoute();
 });
 
-var button = document.querySelector(".button");
 if (pageYOffset > window.innerHeight) {
 	button.style.display = "flex";
 }
@@ -40,24 +50,9 @@ window.addEventListener("scroll", () => {
 		button.style.display = "none";
 	}
 });
-/*document.querySelector(".button").style.display=pageYOffset>window.innerHeight?"flex":"none";
-window.addEventListener('scroll',()=>{document.querySelector(".button").style.display=pageYOffset>window.innerHeight?"flex":"none"});*/
 
 // Инициализация маршрутов
 function initRouter() {
-	// Определяем маршруты и их обработчики
-	routes = {
-		"/for6": () => {
-			Object.values(properties.text).forEach((e) => {
-				p = document.createElement("p");
-				p.innerHTML = "<b>" + e.name + "</b>: " + e.value + "; – " + e.description +"<br><i>" + e.name + ": " + e.example + ";" + "</i> " + "(" + e.default + ")";
-				content.append(p);
-			});
-		}
-	};
-
-	defaultRoute = "/for6";
-
 	// Слушаем изменения URL (кнопки браузера)
 	window.addEventListener("popstate", handleRoute);
 
