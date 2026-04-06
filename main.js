@@ -1,4 +1,9 @@
 let properties = {};
+const defaultRoute = "/for6";
+const content = document.querySelector("#content");
+const close = document.querySelector(".close");
+const button = document.querySelector(".button");
+const information = document.querySelector("#information");
 const routes = {
 	"/for6": () => {
 		Object.values(properties.text).forEach((e) => {
@@ -8,10 +13,6 @@ const routes = {
 		});
 	}
 };
-const defaultRoute = "/for6";
-const content = document.querySelector("#content");
-const close = document.querySelector(".close");
-const button = document.querySelector(".button");
 
 fetch('./properties.json')
   .then(response => {
