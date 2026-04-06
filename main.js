@@ -41,6 +41,8 @@ close.onclick = () => {
 button_info.onclick = () => {
 	information.style.display = "block";
 	document.querySelector("#information+a").style.display = "block";
+	document.querySelector("#information+a+*").style.position = "relative";
+	document.querySelector("#information+a+*").style.display = "";
 };
 
 if (pageYOffset > window.innerHeight) {
