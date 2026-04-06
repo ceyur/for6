@@ -34,6 +34,8 @@ close.onclick = () => {
 	console.log("close.click");
 	information.style.display = "none";
 	document.querySelector("#information+a").style.display = "none";
+	document.querySelector("#information+a+*").style.position = "fixed";
+	document.querySelector("#information+a+*").style.width = "100%";
 	// Переход по маршруту
 	history.pushState({}, "", path);
 	handleRoute();
