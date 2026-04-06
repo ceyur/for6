@@ -50,7 +50,7 @@ function initRouter() {
 		"/for6": () => {
 			Object.values(properties.text).forEach((e) => {
 				p = document.createElement("p");
-				p.innerHTML = "<b>" + e.name + "</b>: " + e.attribute + "; – " + e.description +"<br><i>" + e.name + ": " + e.example + ";" + "</i> " + "(" + e.default + ")";
+				p.innerHTML = "<b>" + e.name + "</b>: " + e.value + "; – " + e.description +"<br><i>" + e.name + ": " + e.example + ";" + "</i> " + "(" + e.default + ")";
 				content.append(p);
 			});
 		}
