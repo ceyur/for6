@@ -4,6 +4,7 @@ const content = document.querySelector("#content");
 const close = document.querySelector(".close");
 const button = document.querySelector(".button");
 const information = document.querySelector("#information");
+const button_info = document.querySelector("#button_info");
 const routes = {
 	"/for6": () => {
 		Object.values(properties.text).forEach((e) => {
@@ -28,7 +29,6 @@ fetch('./properties.json')
 		console.log("ïnitRouter");
   });
 
-
 close.onclick = () => {
 	const path = "/for6";
 	console.log("close.click");
@@ -37,6 +37,10 @@ close.onclick = () => {
 	// Переход по маршруту
 	history.pushState({}, "", path);
 	handleRoute();
+};
+button_info.onclick = () => {
+	information.style.display = "block";
+	document.querySelector("#information+a").style.display = "block";
 };
 
 if (pageYOffset > window.innerHeight) {
