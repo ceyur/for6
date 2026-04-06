@@ -6,6 +6,7 @@ const button = document.querySelector(".button");
 const information = document.querySelector("#information");
 const routes = {
 	"/for6": () => {
+		information.style.display = none;
 		Object.values(properties.text).forEach((e) => {
 			p = document.createElement("p");
 			p.innerHTML = "<b>" + e.name + "</b>: " + e.value + "; – " + e.description +"<br><i>" + e.name + ": " + e.example + ";" + "</i> " + "(" + e.default + ")";
