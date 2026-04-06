@@ -18,7 +18,7 @@ fetch('./properties.json')
 
 const close = document.querySelector(".close");
 close.addEventListener("click", () => {
-	const path = "/u";
+	const path = "/for6";
 	console.log("close.click");
 	// Переход по маршруту
 	history.pushState({}, "", path);
