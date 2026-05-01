@@ -12,6 +12,12 @@
 	"icons": [
 		{
 			"purpose": "maskable",
+			"src": "black-svg17.svg",
+			"sizes": "any",
+			"type": "image/svg+xml"
+		},
+		{
+			"purpose": "any",
 			"src": "black-svg15.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
