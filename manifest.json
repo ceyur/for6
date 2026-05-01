@@ -12,8 +12,14 @@
 	"orientation": "portrait",
 	"icons": [
 		{
+			"purpose": "any",
+			"src": "rainbol-svg.svg",
+			"sizes": "any",
+			"type": "image/svg+xml"
+		},
+		{
 			"purpose": "maskable",
-			"src": "black-svg15.svg",
+			"src": "rainbol-svg.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
 		}
