@@ -11,7 +11,7 @@
 	"orientation": "portrait",
 	"icons": [
 		{
-			"purpose": "any",
+			"purpose": "maskable",
 			"src": "black-svg15.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
