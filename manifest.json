@@ -8,12 +8,11 @@
 	"theme_color": "#57f7cf",
 	"background_color": "#57f7cf",
 	"display": "standalone",
-	"display_override": ["standalone"],
 	"orientation": "portrait",
 	"icons": [
 		{
 			"purpose": "any",
-			"src": "rainbol-svg.svg",
+			"src": "black-svg15.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
 		}
