@@ -16,12 +16,6 @@
 			"src": "rainbol-svg.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
-		},
-		{
-			"purpose": "maskable",
-			"src": "rainbol-svg.svg",
-			"sizes": "any",
-			"type": "image/svg+xml"
 		}
 	]
 }
