@@ -12,40 +12,10 @@
 	"orientation": "portrait",
 	"icons": [
 		{
-			"purpose": "any",
-			"src": "rainbol-svg.svg",
+			"purpose": "maskable",
+			"src": "black-svg15.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
-		},
-		{
-			"purpose": "maskable",
-			"src": "rainbol-svg.svg",
-			"sizes": "any",
-			"type": "image/svg+xml"
-		},
-		{
-			"purpose": "any",
-      		"src": "rainbol511.png",
-		    "sizes": "511x511",
-		    "type": "image/png"
-    	},
-	    {
-		    "purpose": "any",
-		    "src": "rainbol511.png",
-		    "sizes": "512x512",
-		    "type": "image/png"
-	    },
-		{
-			"purpose": "maskable",
-      		"src": "rainbol511.png",
-		    "sizes": "511x511",
-		    "type": "image/png"
-    	},
-	    {
-		    "purpose": "maskable",
-		    "src": "rainbol512.png",
-		    "sizes": "512x512",
-		    "type": "image/png"
-	    }
+		}
 	]
 }
