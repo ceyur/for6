@@ -8,8 +8,8 @@
 		}   
 	</style>
 
-	<rect fill="#000" x="0" y="0" width="15" height="5.5"/>
-	<rect fill="#3CC982" x="0" y="4" width="15" height="11"/>
+	<rect fill="#000" x="0" y="0" width="15" height="5"/>
+	<rect fill="#3CC982" x="0" y="4.5" width="15" height="11"/>
 
 	<circle fill="#EB534E" cx="3.5" cy="3" r="0.5"/>
 	<circle fill="#EFC535" cx="5.5" cy="3" r="0.5"/>
