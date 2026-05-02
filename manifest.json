@@ -2,12 +2,14 @@
 	"name": "Справочник css свойств",
 	"short_name": "CSS",
 	"description": "Справочник css свойств для начинающих",
+	"id": "/for6",
 	"start_url": "/for6",
 	"version": "1",
 	"lang": "ru-RU",
 	"theme_color": "#57f7cf",
 	"background_color": "#57f7cf",
 	"display": "standalone",
+	"display-override": "standalone",
 	"orientation": "portrait",
 	"icons": [
 		{
