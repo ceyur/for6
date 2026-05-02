@@ -9,7 +9,7 @@
 	"theme_color": "#57f7cf",
 	"background_color": "#57f7cf",
 	"display": "standalone",
-	"display-override": "standalone",
+	"display_override": ["standalone"],
 	"orientation": "portrait",
 	"icons": [
 		{
