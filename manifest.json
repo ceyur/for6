@@ -24,5 +24,14 @@
 			"sizes": "any",
 			"type": "image/svg+xml"
 		}
+	],
+	"screenshots": [
+	    {
+	      "src": "screenshot.png",
+	      "sizes": "1920x1080",
+	      "type": "image/png",
+	      "form_factor": "narrow",
+	      "label": "Экран загрузки на телефоне"
+	    }
 	]
 }
